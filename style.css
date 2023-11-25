@@ -142,6 +142,10 @@ body {
 
 /* mobile responsive */
 @media only screen and (max-width: 600px) {
+    .navbar{
+        height: 4rem;
+    }
+
   .button {
     margin-right: 5%;
     margin-left: auto;
@@ -230,7 +234,7 @@ body {
   .overlay {
     margin-left: auto;
     margin-right: auto;
-    width: 38rem;
+    width: 35rem;
   }
 
   .time {
