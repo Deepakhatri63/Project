@@ -1,0 +1,291 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: black;
+  width: 100%;
+  height: 5.5rem;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navbar img {
+  width: 3rem;
+  height: 3rem;
+  margin-left: 6%;
+}
+
+.title {
+  color: whitesmoke;
+  margin: 0;
+  margin-left: 1rem;
+  font-family: "Press Start 2P";
+  font-weight: 200;
+  font-size: larger;
+}
+
+.button {
+  margin-right: 5%;
+  margin-left: auto;
+  height: 3.2rem;
+  width: 6.4rem;
+  background-color: #126ff0;
+  border-radius: 0.6rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Initial shadow */
+  transition: box-shadow 0.3s ease; /* Transition for smooth effect */
+}
+
+.button:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+.buy {
+  padding: 0;
+  margin: 0;
+  font-size: 0.9rem;
+  color: whitesmoke;
+  font-family: "Press Start 2P";
+  font-weight: 100;
+  margin-top: 0.5rem;
+  margin-left: 0.9rem;
+}
+
+.ticket {
+  padding: 0;
+  margin: 0;
+  color: whitesmoke;
+  font-family: "Press Start 2P";
+  font-weight: 100;
+  margin-top: 0.5rem;
+  margin-left: 0.6rem;
+  font-size: 0.9rem;
+}
+
+.bg img {
+  width: 100%;
+  height: 90vh;
+  opacity: 0.9;
+}
+
+.overlay {
+  position: relative;
+  margin-top: -35rem;
+  background-color: #126ff0;
+  width: 59rem;
+  height: 28rem;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 2rem;
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.4); /* aqua color with 50% transparency */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: slideIn 1s ease-out forwards; /* Animation duration and easing */
+}
+
+.time,
+.place,
+.quote {
+  text-align: center;
+  margin: 0.8rem;
+  font-family: "rubik";
+  transition: opacity 2s ease-in-out; /* Adjust the duration and easing as needed */
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.time {
+  font-weight: 500;
+}
+
+.place {
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.quote {
+  font-weight: 500;
+}
+
+.info-title {
+  margin-top: 12rem;
+  font-family: "rubik";
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.info-para {
+  font-family: "rubik";
+  font-weight: 100;
+  font-size: large;
+  margin-left: 16rem;
+  margin-right: 16rem;
+  text-align: justify;
+  text-align-last: center;
+}
+
+/* mobile responsive */
+@media only screen and (max-width: 600px) {
+  .button {
+    margin-right: 5%;
+    margin-left: auto;
+  }
+
+  .title {
+    margin-left: 0.5rem;
+  }
+
+  .navbar img {
+    margin-left: 1rem;
+  }
+
+  .bg img {
+    height: 85vh;
+  }
+
+  .overlay {
+    margin-right: auto;
+    margin-left: auto;
+    width: 28rem;
+  }
+
+  .time {
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+
+  .place {
+    font-weight: 900;
+    font-size: 2rem;
+  }
+
+  .quote {
+    font-weight: 500;
+    font-size: 1.4rem;
+  }
+
+  .info-title {
+    margin-top: 10rem; /* Adjust the margin as needed */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; /* Center the text */
+  }
+
+  .info-para {
+    margin-left: 1rem; /* Adjust the margin as needed */
+    margin-right: 1rem; /* Adjust the margin as needed */
+  }
+}
+
+/* tablet responsive */
+@media screen and (min-width: 601px) and (max-width: 1023px) {
+  .button {
+    margin-right: 5%;
+    margin-left: auto;
+  }
+
+  .title {
+    margin-left: 0.5rem;
+  }
+
+  .navbar img {
+    margin-left: 2rem;
+  }
+
+  .overlay {
+    margin-left: auto;
+    margin-right: auto;
+    width: 38rem;
+  }
+
+  .time {
+    font-weight: 500;
+    font-size: 2rem;
+  }
+
+  .place {
+    font-weight: 900;
+    font-size: 2.5rem;
+  }
+
+  .quote {
+    font-weight: 500;
+    font-size: 1.8rem;
+  }
+
+  .info-title {
+    margin-top: 10rem; 
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; 
+  }
+
+  .info-para {
+    margin-left: 2rem; 
+    margin-right: 2rem; 
+  }
+} 
+
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
+  .button {
+    margin-right: 5%;
+    margin-left: auto;
+  }
+
+  .title {
+    margin-left: 0.5rem;
+  }
+
+  .navbar img {
+    margin-left: 2rem;
+  }
+
+  .overlay {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50rem;
+  }
+
+  .time {
+    font-weight: 500;
+    font-size: 2rem;
+  }
+
+  .place {
+    font-weight: 900;
+    font-size: 2.5rem;
+  }
+
+  .quote {
+    font-weight: 500;
+    font-size: 1.8rem;
+  }
+
+  .info-title {
+    margin-top: 10rem; 
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; 
+  }
+
+  .info-para {
+    margin-left: 5rem; 
+    margin-right: 5rem; 
+  }
+}
