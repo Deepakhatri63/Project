@@ -145,39 +145,56 @@ body {
   .button {
     margin-right: 5%;
     margin-left: auto;
+    height: 2.2rem;
+    width: 4.4rem;
+  }
+
+  .buy{
+    font-size: 0.5rem;
+  }
+
+  .ticket{
+    margin-top: 0.2rem;
+    margin-left: 0.4rem;
+    font-size: 0.6rem;
   }
 
   .title {
     margin-left: 0.5rem;
+    font-size: 0.8rem;
   }
 
   .navbar img {
     margin-left: 1rem;
+    width: 2rem;
+    height: 2rem;
   }
 
   .bg img {
-    height: 85vh;
+    height: 75vh;
   }
 
   .overlay {
     margin-right: auto;
     margin-left: auto;
-    width: 28rem;
+    width: 20rem;
+    height: 20rem;
+    margin-top: -28rem;
   }
 
   .time {
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   .place {
     font-weight: 900;
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
 
   .quote {
     font-weight: 500;
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
 
   .info-title {
@@ -185,11 +202,13 @@ body {
     margin-left: auto;
     margin-right: auto;
     text-align: center; /* Center the text */
+    font-size: 1.4rem;
   }
 
   .info-para {
     margin-left: 1rem; /* Adjust the margin as needed */
     margin-right: 1rem; /* Adjust the margin as needed */
+    font-size: 1rem;
   }
 }
 
@@ -230,17 +249,17 @@ body {
   }
 
   .info-title {
-    margin-top: 10rem; 
+    margin-top: 10rem;
     margin-left: auto;
     margin-right: auto;
-    text-align: center; 
+    text-align: center;
   }
 
   .info-para {
-    margin-left: 2rem; 
-    margin-right: 2rem; 
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
-} 
+}
 
 @media screen and (min-width: 1024px) and (max-width: 1300px) {
   .button {
@@ -278,14 +297,14 @@ body {
   }
 
   .info-title {
-    margin-top: 10rem; 
+    margin-top: 10rem;
     margin-left: auto;
     margin-right: auto;
-    text-align: center; 
+    text-align: center;
   }
 
   .info-para {
-    margin-left: 5rem; 
-    margin-right: 5rem; 
+    margin-left: 5rem;
+    margin-right: 5rem;
   }
 }
