@@ -101,11 +101,11 @@ body {
 @keyframes slideIn {
   from {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateX(50px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }
 
@@ -128,6 +128,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
 }
 
 .info-para {
@@ -138,13 +140,20 @@ body {
   margin-right: 16rem;
   text-align: justify;
   text-align-last: center;
+  opacity: 0;
+  transform: translateX(50px); 
+  transition: opacity 2s ease-in-out;
+}
+
+.animated {
+    animation: slideIn 1s ease-out forwards;
 }
 
 /* mobile responsive */
 @media only screen and (max-width: 600px) {
-    .navbar{
-        height: 3.5rem;
-    }
+  .navbar {
+    height: 3.5rem;
+  }
 
   .button {
     margin-right: 5%;
@@ -153,11 +162,11 @@ body {
     width: 4.4rem;
   }
 
-  .buy{
+  .buy {
     font-size: 0.5rem;
   }
 
-  .ticket{
+  .ticket {
     margin-top: 0.2rem;
     margin-left: 0.4rem;
     font-size: 0.6rem;
