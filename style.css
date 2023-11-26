@@ -81,7 +81,7 @@ body {
   margin-left: auto;
   border-radius: 2rem;
   color: whitesmoke;
-  background-color: rgba(0, 0, 0, 0.4); /* aqua color with 50% transparency */
+  background-color: rgba(0, 0, 0, 0.5); /* aqua color with 50% transparency */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -109,6 +109,8 @@ body {
   }
 }
 
+
+
 .time {
   font-weight: 500;
 }
@@ -123,31 +125,152 @@ body {
 }
 
 .info-title {
-  margin-top: 12rem;
+  margin-top: 15rem;
   font-family: "rubik";
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  opacity: 0;
-  transition: opacity 2s ease-in-out;
+  /* opacity: 0;
+  transition: opacity 2s ease-in-out; */
 }
 
 .info-para {
   font-family: "rubik";
   font-weight: 100;
-  font-size: large;
+  font-size: larger;
   margin-left: 16rem;
   margin-right: 16rem;
   text-align: justify;
   text-align-last: center;
-  opacity: 0;
+  /* opacity: 0;
   transform: translateX(50px); 
-  transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out; */
 }
 
 .animated {
     animation: slideIn 1s ease-out forwards;
 }
+
+.sp-title{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 8rem;
+  font-family: "rubik";
+}
+
+.speakers{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.square {
+  width: 15.4rem; /* Adjust the size as needed */
+  height: 18.5rem; /* Adjust the size as needed */
+  border: 3.5px solid black; /* Adjust the border width and color as needed */
+  box-sizing: border-box;
+  margin-left: 2rem;
+  margin-top: 3rem;
+  border-radius: 3rem;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Adjust the box shadow as needed */
+}
+
+.square:hover{
+  cursor: pointer;
+}
+
+.square h2{
+  margin-top: 14.5rem;
+  font-size: 0.8rem;
+  text-align: center;
+  font-family: "Press Start 2P";
+  font-weight: 100;
+}
+
+.square h2.short {
+  font-size: 0.7rem; /* Adjust the font size as needed */
+}
+
+.square img{
+  position: absolute;
+}
+
+
+
+.sq1{
+  width: 17rem;
+  margin-left: -1rem;
+  margin-top: -1rem;
+}
+
+.fred{
+  border-radius: 10rem;
+  width: 8rem;
+  margin-left: 3.3rem;
+  margin-top: 3.3rem;
+  border: 3.5px solid black; /* Adjust the border width and color as needed */
+}
+
+.sponsor{
+  font-family: "rubik";
+  text-align: center;
+  margin-top: 8rem;
+
+}
+
+.sponsors{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.spon{
+  width: 12rem;
+  margin-left: 1.5rem;
+  margin-top: 3rem;
+}
+
+.square h3{
+  margin-top: 13rem;
+  text-align: center;
+  font-size: 1.8rem;
+  font-family: "rubik";
+  font-weight: 200;
+}
+
+.space{
+  margin-bottom: 10rem;
+}
+
+#hyper{
+  width: 15rem;
+  margin-left: 0.2rem;
+}
+
+#io{
+  width: 14.8rem;
+  margin-left: 0.1rem;
+}
+
+#jp{
+  width: 14.6rem;
+  margin-left: 0.2rem;
+  margin-top: 4rem;
+}
+
+#ntt{
+  width: 17rem;
+  margin-left: -1rem;
+  margin-top: 1.5rem;
+}
+
+#shield{
+  margin-top: 2rem;
+}
+
+
 
 /* mobile responsive */
 @media only screen and (max-width: 600px) {
@@ -223,6 +346,72 @@ body {
     margin-right: 1rem; /* Adjust the margin as needed */
     font-size: 1rem;
   }
+
+  .sp-title{
+    margin-top: 5rem;
+    font-size: 1.4rem;
+  }
+
+  .square{
+    width: 10rem;
+    height: 14rem;
+    border: 3px solid black;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .sq1{
+    width: 12rem;
+  }
+
+  .fred{
+    width: 5.5rem;
+    margin-left: 2.1rem;
+    margin-top: 2rem;
+  }
+
+  .square h2{
+    margin-top: 10rem;
+    font-size: 0.6rem;
+  }
+
+  .square h2.short{
+    font-size: 0.6rem;
+  }
+
+  .spon{
+    width: 6rem;
+    margin-left: 2rem;
+  }
+
+  .square h3{
+    margin-top: 10rem;
+    font-size: 1.2rem;
+  }
+
+  #hyper{
+    width: 9rem;
+  }
+
+  #io{
+    width: 9.4rem;
+  }
+
+  #jp{
+    width: 9.2rem;
+    margin-top: 3.5rem;
+  }
+
+  #ntt{
+    width: 11rem;
+    margin-left: -0.7rem;
+  }
+
+  #shield{
+    margin-top: 2.2rem;
+    margin-left: 1.5rem;
+  }
+
 }
 
 /* tablet responsive */
