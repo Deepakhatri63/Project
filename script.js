@@ -1,33 +1,14 @@
-// document.addEventListener("DOMContentLoaded", function() {
-//     var infoTitle = document.querySelector(".info-title");
-//     var infoPara = document.querySelector(".info-para");
-//     // var square = document.querySelector(".square");
-
-//     function isInViewport(element) {
-//         var rect = element.getBoundingClientRect();
-//         return (
-//             rect.top >= 0 &&
-//             rect.left >= 0 &&
-//             rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-//             rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-//         );
-//     }
-
-//     function handleScroll() {
-//         if (isInViewport(infoTitle)) {
-//             infoTitle.classList.add("animated");
-//         }
-//         if (isInViewport(infoPara)) {
-//             infoPara.classList.add("animated");
-//         }
-//         // if (isInViewport(square)) {
-//         //     infoPara.classList.add("animated");
-//         // }
-//     }
-
-//     // Initial check in case the elements are already in the viewport on page load
-//     handleScroll();
-
-//     // Listen for scroll events
-//     window.addEventListener("scroll", handleScroll);
-// });
+window.addEventListener("scroll", function () {
+    const navbar = document.querySelector(".navbar");
+  
+    // Check the scroll position
+    if (window.scrollY > 50) {
+      // If scrolled down, change the background color to white
+      navbar.style.backgroundColor = "rgba(0,0,0, 0.9)";
+      navbar.style.boxShadow = "0 2px 4px rgba(0, 0, 0, 0.6)";
+    } else {
+      // If at the top, revert to the original color
+      navbar.style.backgroundColor = "rgba(0,0,0)";
+      navbar.style.boxShadow = "none";
+    }
+  });
